@@ -12,7 +12,7 @@ comprobar_sesion();
 
 <head>
     <meta charset = "UTF-8">
-    <title>Carrito de la compra</title>
+    <title>Cant Puntos</title>
     <style>
 
         *{

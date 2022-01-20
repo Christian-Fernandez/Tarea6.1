@@ -24,7 +24,7 @@ if(comprobarNuevosDatos()){
 
 <head>
     <meta charset = "UTF-8">
-    <title>Carrito de la compra</title>
+    <title>Nueva Ficha</title>
     <style>
 
         *{

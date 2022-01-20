@@ -10,7 +10,7 @@ comprobar_sesion();
 
 <head>
     <meta charset = "UTF-8">
-    <title>Lista de categorias</title>
+    <title>Menú</title>
     <style>
 
         *{

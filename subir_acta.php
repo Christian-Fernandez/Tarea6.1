@@ -24,7 +24,7 @@ $posicion = cargar_posicion();
 
 <head>
     <meta charset = "UTF-8">
-    <title>Carrito de la compra</title>
+    <title>Subir Acta</title>
     <style>
 
         *{
@@ -94,7 +94,7 @@ $posicion = cargar_posicion();
         }
 
 
-        .anadir{
+        .acta{
             background: #4285F4;
             color: white;
         }

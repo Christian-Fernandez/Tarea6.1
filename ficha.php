@@ -20,7 +20,7 @@ if(isset($_GET["borrar"])){
 
 <head>
     <meta charset = "UTF-8">
-    <title>Carrito de la compra</title>
+    <title>Ficha</title>
     <style>
 
         *{

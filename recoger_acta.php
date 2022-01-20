@@ -39,3 +39,50 @@ if(isset($_POST["formulario"])){
 
 
 }
+?>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Sesión cerrada</title>
+    <style>
+
+        p{
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        a {
+            display:inline-block;
+            color: black;
+            border: 1px black solid;
+            border-radius: 5px;
+            text-decoration:none;
+            padding:10px 20px;
+            line-height:normal;
+            font-size:20px;
+            font-weight:bold;
+
+
+        }
+
+        div{
+            margin: 20% auto;
+            text-align: center;
+
+        }
+
+        a:hover {
+            background: #5691f1;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p>¡Se Actualizaron los Datos Correctamente!</p>
+    <a href="jugadores.php">Ir a la página de los Jugadores</a>
+
+</div>
+</body>
+</html>

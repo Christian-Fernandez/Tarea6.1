@@ -26,7 +26,7 @@ if(isset($_POST["estadistica"])){
 <html>
 <head>
     <meta charset = "UTF-8">
-    <title>Lista de categorias</title>
+    <title>Estadisticas</title>
     <style>
 
         *{
