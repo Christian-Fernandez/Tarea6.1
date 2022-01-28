@@ -1,8 +1,12 @@
 <?php
 
+
+const username = "ciclost";
+const pass = "toor";
+
 function comprobar_usuario($nombre,$clave){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -23,7 +27,7 @@ function comprobar_usuario($nombre,$clave){
 
 function cargar_mejores(){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -49,7 +53,7 @@ function cargar_mejores(){
 
 function cargar_mejores_bases(){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -75,7 +79,7 @@ function cargar_mejores_bases(){
 
 function cargar_mejores_Escoltas_Aleros(){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -101,7 +105,7 @@ function cargar_mejores_Escoltas_Aleros(){
 
 function cargar_Jugadores(){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -128,7 +132,7 @@ function cargar_Jugadores(){
 
 function cargar_posicion(){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -154,7 +158,7 @@ function cargar_posicion(){
 
 function cargar_Jugador($id){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -179,7 +183,7 @@ function cargar_Jugador($id){
 
 function cargar_mejores_Alapivots_Pivots(){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -205,7 +209,7 @@ function cargar_mejores_Alapivots_Pivots(){
 
 function actualizar_Jugador($id,$nombre,$posicion,$partidos,$puntos,$rebotes,$asistencias){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -225,34 +229,34 @@ function actualizar_Jugador($id,$nombre,$posicion,$partidos,$puntos,$rebotes,$as
 
 function actualizar_Jugador_Acta($nombre,$puntos,$rebotes,$asistencias){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
         $query = mysqli_query($base,"UPDATE jugadores SET puntos='$puntos',rebotes='$rebotes',asistencias='$asistencias' where nombre='$nombre'");
 
         if($query == FALSE){
-            echo "error";
+
         }else{
 
         }
 
     }else{
-        echo "error";
+
     }
 
 }
 
 function select_Jugador_Acta($nombre){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
         $query = mysqli_query($base,"SELECT puntos,rebotes,asistencias from jugadores where nombre='$nombre'");
 
         if($query == FALSE){
-            echo "error";
+
         }else{
 
             $datos = array();
@@ -266,7 +270,7 @@ function select_Jugador_Acta($nombre){
         }
 
     }else{
-        echo "error";
+
     }
 
 }
@@ -274,7 +278,7 @@ function select_Jugador_Acta($nombre){
 
 function eliminar_Jugador($id){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -295,7 +299,7 @@ function eliminar_Jugador($id){
 
 function filtrar_Jugadores($filtrado){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
@@ -321,7 +325,7 @@ function filtrar_Jugadores($filtrado){
 
 function añadir_Jugador($nombre,$posicion,$partidos,$puntos,$rebotes,$asistencias){
 
-    $base = mysqli_connect("127.0.0.1","root","","baloncesto");
+    $base = mysqli_connect("127.0.0.1",username,pass,"baloncesto");
 
     if($base){
 
